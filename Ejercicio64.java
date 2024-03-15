@@ -16,9 +16,10 @@ while (b<0) {
     potencias(a, b);
     }
     public static void potencias(int entero,int potencia){
-        int resultado=entero;
-        for(int i=1; i<potencia;i++){
-             resultado+=resultado*entero;
+        int resultado=1;
+        for(int i=1; i<=potencia;i++){
+             resultado=resultado*entero;
+             System.out.println("resultado "+resultado+" i "+i);
         }
         System.out.println("Tu numero["+entero+"] elevado a ["+potencia+"] da como resultado: "+resultado);
     }
